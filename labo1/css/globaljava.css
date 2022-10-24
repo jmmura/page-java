@@ -1,0 +1,177 @@
+@font-face {
+    font-family: "Liberation-B";
+    src: url("/fonts/LiberationSans-Bold.ttf") format("truetype");
+}
+  
+@font-face {
+    font-family: "Liberation-R";
+    src: url("/fonts/LiberationSans-Regular.ttf") format("truetype");
+}
+
+
+body {
+    display flex;
+    flex-direction: column;
+    font-size: 100%;
+    background-color: rgb(255,255,255);
+    color: #111111;
+    font-family: Liberation-R, Arial, Helvetica, sans-serif;
+}
+
+
+header {
+    background-color: rgb(58,117,176);
+    color: white;
+    font-size: 200%;
+    top: 0;
+    padding: 1%;
+    font-family: Liberation-B;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+header a{
+    margin-right: 30px;
+}
+  
+img{
+    width: 6rem;
+}
+
+
+header nav a:hover{
+    color: orange;
+}
+  
+.nav_link {
+    color: white;
+    text-decoration: none;
+}
+
+.searchbar{
+    float: right;
+    height: 2rem;
+}
+  
+
+.central {
+    display: flex;
+    flex-direction: column;
+ }
+  
+main {
+    padding: 1%;
+    width: 100%;
+    margin: 0 auto;
+}
+  
+  
+h1 {
+    font-size: 180%;
+}
+  
+h2 {
+    font-size: 130%;
+}
+
+dt{
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+  
+
+  
+aside {
+    background-color: var(--medium-green);
+    flex-grow: 1;
+    padding: 1%;
+    float: left;
+    margin-left: 100px;
+    margin-right: 50px;
+    flex-grow: 1;
+}
+  
+aside > section {
+    padding: 1%;
+    margin-bottom: 2rem;
+}
+
+aside a{
+    color: #006B8F;
+}
+aside a:hover{
+    background-color:#ebf7fc;
+}
+
+
+.infos{
+    background-color: rgb(255,255,206);
+    border-style: solid;
+    border-color: #F0C000;
+    padding: 20px 40px;
+}
+
+.telecharger{
+    background-color: rgb(217,229,234);
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px;
+}
+  
+.button{
+    background-color: #198754;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+  
+footer {
+    background-color: #EEEEEE;
+    text-align: center;
+    height: 80px;
+    padding-top: 30px;
+    margin-bottom: -10px;    
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+footer a{
+    color: #2D5986;
+    margin: 0 20px;
+    
+}
+
+footer nav{
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    .nav_link {
+      margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    .searchbar {   
+    margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+    .central {
+      flex-direction: row;
+    }
+}
+
